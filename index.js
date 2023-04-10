@@ -6,8 +6,12 @@ const user = require("./Routes/User")
 
 app.use(express.json())
 
+// app.use(cors({
+//     origin:"http://localhost:3000"
+// }))
+
 app.use(cors({
-    origin:"http://localhost:3000"
+    origin:"https://rad-lamington-2d2845.netlify.app"
 }))
 
 app.use("/api",user)
